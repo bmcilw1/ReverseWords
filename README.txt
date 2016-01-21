@@ -25,14 +25,15 @@ N = 100
 
 Sample
 
-
 Input 
 
-Output 
 3
 this is a test
 foobar
 all your base
+
+Output 
+
 Case #1: test a is this
 Case #2: foobar
 Case #3: base your all
