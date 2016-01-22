@@ -1,6 +1,6 @@
 #!/usr/bin python
 
-from __future__ import print_function
+from __future__ import print_function, absolute_import
 import sys
 
 def main():
@@ -12,12 +12,12 @@ def main():
     for case in range(1, cases + 1):
         wordList = f.readline().split()
 
-        out.write("Case #" + str(case) + ":")
+        print("Case #" + str(case) + ":", file=out, end="")
 
         for word in reversed(wordList):
-            out.write(" " + word)
+            print(" " + word, file=out, end="")
         
-        out.write("\n")
+        print("", file=out)
 
     out.close()
     f.close()
